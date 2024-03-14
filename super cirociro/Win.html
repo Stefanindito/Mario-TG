@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario TG</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+          }
+          .congrats, button {
+            font-family: "Pixelify Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+          }
+          
+        .video-container {
+            text-align: center;
+
+          }
+        h1{
+            font-family: 'Courier New', Courier, monospace;
+        }
+          video {
+            width: 1200px;
+            vertical-align: middle;
+          }
+          .button {
+             display: flex; 
+            justify-content:center;
+          }
+          .button a{
+            text-decoration: none;
+            color: rgb(32, 31, 31);
+          }
+    </style>
+    <h1 style="display: flex; justify-content: center; " class="congrats" >Congratulations on your wedding day</h1>
+    <div class="video-container">
+        <video autoplay muted controls>
+          <source src="video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="button">
+        <button style="width: 100px;"><a href="index.html">PLAY AGAIN</a></button>
+        <button style="width: 100px;"><a href="start.html">MAIN MENU</a></button>
+    </div>
+</body>
+</html>
