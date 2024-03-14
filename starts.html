@@ -29,6 +29,11 @@ cursor: pointer;
        text-decoration: none;
        color: rgb(32, 31, 31);
      }
+     .hidden{
+
+        display: none;
+     }
+
 </style>
     <div id="game-container">
         <div class="button">
@@ -38,7 +43,11 @@ cursor: pointer;
             <source src="music.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
-
+        <div id="myText" class="hidden" style="        font-family: Pixelify Sans, sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        margin-left: 20px;">Just jump and go straight to save your girl!</div>
         <div id="player"></div>
         <div class="brick"> <img src="indah.png" id="endPoint" width="200px"></div>
         <div class="blinking-png"> <img src="indahhelp.png" id="endPoint" width="200px"></div>
@@ -55,5 +64,16 @@ cursor: pointer;
     </div>
     
     <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(function() {
+                document.getElementById("myText").classList.remove("hidden");
+            }, 1000); // Menunggu 3 detik sebelum menampilkan tulisan
+
+            setTimeout(function() {
+                document.getElementById("myText").classList.add("hidden");
+            }, 7000); // Menyembunyikan tulisan setelah 4 detik
+        });
+    </script>
 </body>
 </html>
